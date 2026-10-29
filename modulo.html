@@ -66,9 +66,14 @@
         }
         .explanation {
             font-size: 14px;
-            color: #555;
-            margin-top: 5px;
+            color: #444;
+            margin-top: 8px;
             font-weight: normal;
+            line-height: 1.5;
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #d0e3f0;
         }
     </style>
 </head>
@@ -124,8 +129,24 @@
             }
 
             const hasil = mod(a, m);
+            
+            const q = Math.floor(a / m);
+            
+            let penjabaran = "";
+            if (a >= 0) {
+                penjabaran = `karena ${a} = ${m} × ${q} + ${hasil}`;
+            } else {
+                penjabaran = `karena untuk bilangan negatif (${a}), (${a} mod ${m}) disesuaikan dengan rumus pemutaran siklus: ((${a} % ${m}) + ${m}) % ${m} = ${hasil}`;
+            }
+
             resDiv.style.display = 'block';
-            resDiv.innerHTML = `Hasil: ${a} mod ${m} = <strong>${hasil}</strong>`;
+            resDiv.innerHTML = `
+                Hasil: ${a} mod ${m} = <strong>${hasil}</strong>
+                <div class="explanation">
+                    <strong>Penjelasan Perhitungan:</strong><br>
+                    Pembagian bulat ${a} oleh ${m} menghasilkan sisa <strong>${hasil}</strong>, ${penjabaran}.
+                </div>
+            `;
         }
 
         function cekKongruensi() {
@@ -148,10 +169,10 @@
             resDiv.style.display = 'block';
             if (isCongruent) {
                 resDiv.innerHTML = `<span style="color: green;">BENAR (True)</span>: ${a} ≡ ${b} (mod ${m})
-                    <div class="explanation">Penjelasan: (${a} - ${b}) = ${a - b}, di mana ${selisih} habis dibagi ${m} (hasil: ${selisih / m}). Kedua bilangan memiliki sisa pembagian yang sama yaitu ${modA}.</div>`;
+                    <div class="explanation"><strong>Penjelasan:</strong><br>(${a} - ${b}) = ${a - b}, di mana ${selisih} habis dibagi ${m} (hasil: ${selisih / m}). Kedua bilangan memiliki sisa pembagian yang sama yaitu ${modA}.</div>`;
             } else {
                 resDiv.innerHTML = `<span style="color: red;">SALAH (False)</span>: ${a} ≢ ${b} (mod ${m})
-                    <div class="explanation">Penjelasan: ${a} mod ${m} = ${modA}, sedangkan ${b} mod ${m} = ${modB}. Sisa pembagiannya tidak sama.</div>`;
+                    <div class="explanation"><strong>Penjelasan:</strong><br>${a} mod ${m} = ${modA}, sedangkan ${b} mod ${m} = ${modB}. Sisa pembagian keduanya tidak sama.</div>`;
             }
         }
     </script>
