@@ -1,0 +1,1479 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 22px 8%;
+
+    background-color: #142b45;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #80c4ed;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #80c4ed;
+}
+
+
+/* SECTION 2: HERO */
+
+.hero {
+    min-height: 550px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 80px 12%;
+
+    background-color: #eaf2f8;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.eyebrow {
+    color: #315b7d;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.2;
+    color: #142b45;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #3977a6;
+}
+
+.hero h2 {
+    font-size: 21px;
+    color: #315b7d;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    color: #718096;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background-color: #142b45;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #3977a6;
+    transform: translateY(-3px);
+}
+
+.hero-decoration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    width: 280px;
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 6px solid white;
+
+    box-shadow: 15px 15px 0 #a7c9df;
+}
+
+
+/* SECTION 3: ABOUT ME */
+
+.section {
+    padding: 90px 10%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+    color: #142b45;
+    margin-bottom: 10px;
+}
+
+.section-heading p:last-child {
+    color: #718096;
+}
+
+.about-card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    background-color: white;
+
+    padding: 40px;
+    border-radius: 18px;
+
+    box-shadow: 0 5px 25px rgba(20,43,69,0.07);
+}
+
+/* ABOUT ME PHOTO */
+
+.about-photo {
+    width: 300px;
+    height: 380px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    border: 5px solid white;
+
+    box-shadow: 10px 10px 0 #a7c9df;
+}
+
+.about-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.about-content h3 {
+    font-size: 25px;
+    color: #142b45;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    color: #718096;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+/* SECTION 3: ABOUT ME */
+
+.about-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+
+    background-color: white;
+    padding: 40px;
+    border-radius: 18px;
+
+    box-shadow: 0 5px 25px rgba(20,43,69,0.07);
+}
+
+.about-photo {
+    width: 300px;
+    height: 380px;
+    flex-shrink: 0;
+
+    overflow: hidden;
+    border-radius: 20px;
+    border: 5px solid white;
+
+    box-shadow: 10px 10px 0 #a7c9df;
+}
+
+.about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h3 {
+    font-size: 25px;
+    color: #142b45;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    color: #718096;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+/* SECTION 6: SKILLS */
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.skill-card {
+    background-color: #eaf2f8;
+
+    padding: 30px;
+
+    border-radius: 14px;
+
+    border: 1px solid #c5d9e8;
+    border-top: 5px solid #3977a6;
+
+    box-shadow: 0 5px 20px rgba(20,43,69,0.10);
+
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(20,43,69,0.15);
+}
+
+.skill-card h3 {
+    color: #142b45;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.skill-card p {
+    color: #315b7d;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.skills-container .skill-card {
+    background-color: #eaf2f8 !important;
+    border: 1px solid #c5d9e8 !important;
+    border-top: 5px solid #3977a6 !important;
+    border-radius: 14px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(20, 43, 69, 0.10);
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px 5%;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        padding: 65px 7%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .circle {
+        width: 160px;
+        height: 160px;
+        font-size: 75px;
+    }
+
+
+    /* ABOUT */
+
+    .about-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+    }
+
+
+    /* GRID */
+
+    .biodata-container,
+    .education-container,
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* GENERAL */
+
+    .section {
+        padding: 65px 6%;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+}
+
+
+/* SECTION 8: BUKTI BELAJAR */
+
+.learning-section {
+    background-color: #eaf2f8;
+}
+
+.learning-intro {
+    max-width: 850px;
+    margin: 0 auto 40px;
+
+    padding: 35px;
+
+    background-color: #142b45;
+    color: white;
+
+    border-radius: 18px;
+}
+
+.learning-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #80c4ed;
+    font-weight: bold;
+}
+
+.learning-intro h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.learning-intro p {
+    color: #d1dfeb;
+    line-height: 1.8;
+}
+
+.learning-levels {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.level-card {
+    padding: 25px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    border: 1px solid #dce5ed;
+}
+
+.level-card span {
+    font-size: 11px;
+    font-weight: bold;
+    color: #3977a6;
+}
+
+.level-card h4 {
+    color: #142b45;
+    font-size: 20px;
+    margin: 12px 0;
+}
+
+.level-card p {
+    color: #718096;
+    font-size: 14px;
+}
+
+/* SECTION 7: FOOTER */
+.footer {
+    background-color: #142b45;
+    color: white;
+    text-align: center;
+    padding: 45px 10%;
+}
+
+.footer h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.footer h3 span {
+    color: #80c4ed;
+}
+
+.footer p {
+    color: #c5d9e8;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.footer-copyright {
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+/* MODULO CALCULATOR - FINAL DESIGN */
+
+.modulo-section {
+    background: linear-gradient(
+        180deg,
+        #eaf2f8 0%,
+        #ffffff 100%
+    );
+}
+
+.modulo-card {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 45px;
+    background: #ffffff;
+    border-radius: 22px;
+    border: 1px solid #dce8f1;
+    box-shadow: 0 15px 40px rgba(20, 43, 69, 0.10);
+}
+
+.modulo-card h3 {
+    font-size: 27px;
+    color: #142b45;
+    margin-bottom: 10px;
+}
+
+.modulo-description {
+    color: #718096;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.modulo-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.input-group label {
+    color: #315b7d;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.input-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 1px solid #c5d9e8;
+    border-radius: 10px;
+    background: #f8fbfd;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #3977a6;
+    box-shadow: 0 0 0 3px rgba(57, 119, 166, 0.12);
+}
+
+#modulo-button {
+    width: 100%;
+    margin-top: 30px;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    background: #142b45;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#modulo-button:hover {
+    background: #3977a6;
+    transform: translateY(-2px);
+}
+
+.modulo-result {
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 12px;
+    background: #eaf2f8;
+    color: #142b45;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.modulo-result h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.modulo-result strong {
+    color: #3977a6;
+    font-size: 24px;
+}
+
+@media (max-width: 600px) {
+    .modulo-card {
+        padding: 25px;
+    }
+
+    .modulo-inputs {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* CLICKABLE LEARNING CARD */
+
+a.level-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+a.level-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(20,43,69,0.12);
+    border-color: #3977a6;
+}
+
+.level-card small {
+    display: inline-block;
+    margin-top: 15px;
+    color: #3977a6;
+    font-weight: bold;
+}
+
+/* CONGRUENCE CHECKER */
+
+.congruence-section {
+    background-color: #f8fbfd;
+}
+
+.congruence-card {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 45px;
+    background: #ffffff;
+    border-radius: 22px;
+    border: 1px solid #dce8f1;
+    box-shadow: 0 15px 40px rgba(20,43,69,0.10);
+}
+
+.congruence-card h3 {
+    font-size: 27px;
+    color: #142b45;
+    margin-bottom: 10px;
+}
+
+.congruence-description {
+    color: #718096;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.congruence-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.congruence-inputs .input-group:last-child {
+    grid-column: 1 / -1;
+}
+
+.congruence-inputs input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 1px solid #c5d9e8;
+    border-radius: 10px;
+    background: #f8fbfd;
+    font-size: 15px;
+}
+
+.congruence-inputs input:focus {
+    outline: none;
+    border-color: #3977a6;
+    box-shadow: 0 0 0 3px rgba(57,119,166,0.12);
+}
+
+#congruence-button {
+    width: 100%;
+    margin-top: 30px;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    background: #142b45;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#congruence-button:hover {
+    background: #3977a6;
+    transform: translateY(-2px);
+}
+
+.congruence-result {
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 12px;
+    background: #eaf2f8;
+    color: #142b45;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.congruence-result strong {
+    color: #3977a6;
+}
+
+@media (max-width: 600px) {
+    .congruence-card {
+        padding: 25px;
+    }
+
+    .congruence-inputs {
+        grid-template-columns: 1fr;
+    }
+
+    .congruence-inputs .input-group:last-child {
+        grid-column: auto;
+    }
+}
+
+/* NUMBER SYSTEM CALCULATOR */
+.number-section {
+    background-color: #eaf2f8;
+}
+
+.number-card {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 45px;
+    background-color: white;
+    border: 1px solid #dce8f1;
+    border-radius: 22px;
+    box-shadow: 0 15px 40px rgba(20,43,69,0.10);
+}
+
+.number-card h3 {
+    color: #142b45;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.number-description {
+    color: #718096;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.number-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.number-input-group label {
+    color: #315b7d;
+    font-weight: bold;
+}
+
+.number-input-group input,
+.number-selects select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 1px solid #c5d9e8;
+    border-radius: 10px;
+    background-color: #f8fbfd;
+    font-size: 15px;
+}
+
+.number-input-group input:focus,
+.number-selects select:focus {
+    outline: none;
+    border-color: #3977a6;
+    box-shadow: 0 0 0 3px rgba(57,119,166,0.12);
+}
+
+.number-selects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.number-selects select {
+    margin-top: 10px;
+}
+
+#convert-button {
+    width: 100%;
+    margin-top: 30px;
+    padding: 16px;
+    background-color: #142b45;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#convert-button:hover {
+    background-color: #3977a6;
+    transform: translateY(-2px);
+}
+
+.number-result {
+    margin-top: 25px;
+    padding: 25px;
+    background-color: #eaf2f8;
+    color: #142b45;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.number-result strong {
+    color: #3977a6;
+    font-size: 22px;
+}
+
+@media (max-width: 600px) {
+
+    .number-card {
+        padding: 25px;
+    }
+
+    .number-selects {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* NUMBER SYSTEM OUTPUT */
+
+.number-output {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.output-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #dce8f1;
+    border-radius: 12px;
+}
+
+.output-item span {
+    color: #718096;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.output-item strong {
+    color: #142b45;
+    font-size: 22px;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+    .number-output {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* NUMBER SYSTEM SELECT DESIGN */
+
+.number-input-group select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #dce5ed;
+    border-radius: 10px;
+    background-color: white;
+    color: #142b45;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.number-input-group select:focus {
+    border-color: #3977a6;
+    box-shadow: 0 0 0 3px rgba(57, 119, 166, 0.12);
+}
+
+
+/* COMBINATORICS CALCULATOR */
+
+.combinatorics-section {
+    background-color: #eaf2f8;
+}
+
+.combinatorics-card {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 0 5px 25px rgba(20, 43, 69, 0.07);
+}
+
+.combinatorics-card h3 {
+    color: #142b45;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.combinatorics-description {
+    color: #718096;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.combinatorics-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.combinatorics-input-group label {
+    color: #315b7d;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.combinatorics-input-group input,
+.combinatorics-input-group select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #dce5ed;
+    border-radius: 10px;
+    background-color: white;
+    color: #142b45;
+    font-size: 14px;
+    outline: none;
+}
+
+.combinatorics-input-group input:focus,
+.combinatorics-input-group select:focus {
+    border-color: #3977a6;
+    box-shadow: 0 0 0 3px rgba(57, 119, 166, 0.12);
+}
+
+.combinatorics-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#combinatorics-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #142b45;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#combinatorics-button:hover {
+    background-color: #3977a6;
+    transform: translateY(-2px);
+}
+
+.combinatorics-result {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #eaf2f8;
+    color: #315b7d;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.combinatorics-result h3 {
+    color: #142b45;
+    margin-bottom: 10px;
+}
+
+.combinatorics-result strong {
+    color: #142b45;
+    font-size: 22px;
+}
+
+@media (max-width: 600px) {
+    .combinatorics-card {
+        padding: 25px;
+    }
+
+    .combinatorics-inputs {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+
+
+/* MODULO CALCULATION EXPLANATION */
+
+.calculation-summary {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #dce8f1;
+    border-radius: 12px;
+}
+
+.calculation-summary strong {
+    color: #3977a6;
+    font-size: 25px;
+}
+
+.calculation-explanation {
+    margin-top: 25px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.calculation-explanation h4 {
+    color: #142b45;
+    font-size: 17px;
+    margin: 22px 0 10px;
+}
+
+.calculation-explanation h4:first-child {
+    margin-top: 0;
+}
+
+.calculation-explanation p {
+    color: #718096;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.calculation-explanation strong {
+    color: #3977a6;
+}
+
+/* MODULO RESULT - SIMPLE DESIGN */
+
+.modulo-result {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f5f8fb;
+    border-radius: 12px;
+    color: #142b45;
+    text-align: left;
+    line-height: 1.7;
+}
+
+.modulo-result h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #142b45;
+}
+
+.modulo-result h4 {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #142b45;
+}
+
+.modulo-result p {
+    font-size: 14px;
+    color: #718096;
+    margin-bottom: 8px;
+}
+
+.modulo-result .math-operation {
+    font-size: 16px;
+    font-weight: bold;
+    color: #3977a6;
+    margin: 5px 0;
+    overflow-wrap: anywhere;
+}
+
+.modulo-result .modulo-final-answer {
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #142b45;
+    color: white;
+    border-radius: 10px;
+}
+
+.modulo-result .modulo-final-answer h2 {
+    color: white;
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+.modulo-result .modulo-final-answer p {
+    color: #d1dfeb;
+    margin: 0;
+}
+
+.modulo-result .modulo-step {
+    padding: 10px 0;
+    border-bottom: 1px solid #dce8f1;
+}
+
+.modulo-result .modulo-verification {
+    margin-top: 15px;
+    padding: 12px;
+    background: #eaf2f8;
+    border-radius: 8px;
+}
+
+.modulo-result .modulo-conclusion {
+    margin-top: 15px;
+}
+
+/* CONGRUENCE STEP-BY-STEP RESULT DESIGN */
+.congruence-result {
+    margin-top: 30px;
+    padding: 0;
+    background: transparent;
+    color: #142b45;
+    text-align: left;
+    line-height: 1.7;
+}
+
+.congruence-result h3 {
+    font-size: 24px;
+    color: #142b45;
+    margin-bottom: 20px;
+}
+
+.congruence-final-answer {
+    padding: 25px;
+    margin-bottom: 30px;
+    background: #142b45;
+    color: white;
+    border-radius: 16px;
+}
+
+.congruence-final-answer span {
+    display: block;
+    color: #bcd7eb;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.congruence-final-answer h2 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 8px;
+    overflow-wrap: anywhere;
+}
+
+.congruence-final-answer p {
+    color: #d1dfeb;
+    font-size: 14px;
+}
+
+.congruence-steps-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #142b45;
+}
+
+.congruence-step {
+    padding: 20px;
+    margin-bottom: 15px;
+    background: white;
+    border: 1px solid #dce8f1;
+    border-radius: 14px;
+}
+
+.congruence-step span {
+    display: block;
+    color: #3977a6;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.congruence-step h4 {
+    color: #142b45;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.congruence-step .math-operation {
+    color: #142b45;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    overflow-wrap: anywhere;
+}
+
+.congruence-step p {
+    color: #718096;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.congruence-comparison {
+    padding: 22px;
+    margin-top: 25px;
+    background: #eaf2f8;
+    border: 1px solid #c5d9e8;
+    border-radius: 14px;
+}
+
+.congruence-comparison h4 {
+    color: #142b45;
+    margin-bottom: 12px;
+}
+
+.congruence-comparison .math-operation {
+    color: #3977a6;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    overflow-wrap: anywhere;
+}
+
+.congruence-comparison p {
+    color: #718096;
+    font-size: 14px;
+}
+
+.congruence-conclusion {
+    padding: 20px 5px 5px;
+}
+
+.congruence-conclusion h4 {
+    color: #142b45;
+    margin-bottom: 8px;
+}
+
+.congruence-conclusion p {
+    color: #718096;
+    line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+    .congruence-final-answer h2 {
+        font-size: 23px;
+    }
+
+    .congruence-step .math-operation,
+    .congruence-comparison .math-operation {
+        font-size: 19px;
+    }
+}
+
+/* FIX MODULO LAYOUT */
+
+.modulo-card {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    border-radius: 18px;
+}
+
+.modulo-result {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.modulo-result h3 {
+    font-size: 18px;
+}
+
+.modulo-result .modulo-final-answer h2 {
+    font-size: 22px;
+}
+
+.modulo-result .math-operation {
+    font-size: 16px;
+}
+
+.modulo-result .modulo-step {
+    padding: 10px 0;
+}
+
+
+/* =================================
+   MODULO CALCULATOR
+================================= */
+
+.modulo-card {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    border-radius: 18px;
+    box-sizing: border-box;
+}
+
+.modulo-description {
+    color: #718096;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.modulo-inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.modulo-card .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.modulo-card label {
+    color: #142b45;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.modulo-card input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dce8f1;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.modulo-card button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    background: #142b45;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* RESULT CONTAINER */
+
+.modulo-result {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 22px;
+    padding: 18px;
+    background: #f5f8fb;
+    border-radius: 12px;
+    color: #142b45;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.modulo-result h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #142b45;
+}
+
+.modulo-result p {
+    font-size: 13px;
+    color: #718096;
+    margin: 5px 0;
+}
+
+/* FINAL ANSWER */
+
+.modulo-final-answer {
+    padding: 16px;
+    margin-bottom: 18px;
+    background: #142b45;
+    color: white;
+    border-radius: 10px;
+}
+
+.modulo-final-answer span {
+    display: block;
+    color: #bcd7eb;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 6px;
+}
+
+.modulo-final-answer h2 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.modulo-final-answer p {
+    color: #d1dfeb;
+    font-size: 13px;
+}
+
+/* CALCULATION STEPS */
+
+.modulo-steps-title {
+    font-size: 17px !important;
+    margin-bottom: 10px;
+}
+
+.modulo-step {
+    padding: 12px 0;
+    border-bottom: 1px solid #dce8f1;
+}
+
+.modulo-step span {
+    display: block;
+    color: #3977a6;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.modulo-step h4,
+.modulo-verification h4,
+.modulo-conclusion h4 {
+    color: #142b45;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.modulo-step .math-operation,
+.modulo-verification .math-operation {
+    color: #3977a6;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+    overflow-wrap: anywhere;
+}
+
+/* VERIFICATION */
+
+.modulo-verification {
+    padding: 14px;
+    margin-top: 15px;
+    background: #eaf2f8;
+    border-radius: 9px;
+}
+
+.modulo-conclusion {
+    padding-top: 14px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .modulo-card {
+        padding: 18px;
+    }
+
+    .modulo-inputs {
+        grid-template-columns: 1fr;
+    }
+
+    .modulo-result {
+        padding: 13px;
+    }
+
+    .modulo-final-answer h2 {
+        font-size: 19px;
+    }
+}
